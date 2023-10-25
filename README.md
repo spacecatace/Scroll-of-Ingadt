@@ -15,7 +15,7 @@ Tämä repo itsessään ei riitä suoraksi Unity-projektiksi, joten sen sisält�
 
 **Jos käytät muita IDE:tä kuin Visual Studio Code, käythän lisäämässä siihen generoidut rivit [.gitignore](/.gitignore)-tiedostoon [täältä](https://www.toptal.com/developers/gitignore).**
 
-## Projektissa käytetyt Unityt-paketit
+## Projektissa käytetyt Unity-paketit
 Siltä varalta, että paketteja joutuu itse asentamaan ennen projektin tuontia:
 - 2D (package): com.unity.feature.2d
 - Input System: com.unity.inputsystem
