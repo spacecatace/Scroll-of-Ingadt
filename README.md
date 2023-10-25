@@ -17,14 +17,14 @@ T채m채 repo itsess채채n ei riit채 suoraksi Unity-projektiksi, joten sen sis채lt�
 
 ## Projektissa k채ytetyt Unity-paketit
 Silt채 varalta, ett채 paketteja joutuu itse asentamaan ennen projektin tuontia:
-- 2D (package): com.unity.feature.2d
-- Input System: com.unity.inputsystem
-- JetBrains Rider Editor: com.unity.ide.rider
-- Test Framework: com.unity.test-framework
-- TextMeshPro: com.unity.textmeshpro
-- Timeline: com.unity.timeline
-- Unity UI: com.unity.ugui
-- Universal RP: com.unity.render-pipelines.universal
-- Version Control: com.unity.collab-proxy
-- Visual Scripting: com.unity.visualscripting
-- Visual Studio Editor: com.unity.ide.visualstudio
+- 2D (package): _com.unity.feature.2d_
+- Input System: _com.unity.inputsystem_
+- JetBrains Rider Editor: _com.unity.ide.rider_
+- Test Framework: _com.unity.test-framework_
+- TextMeshPro: _com.unity.textmeshpro_
+- Timeline: _com.unity.timeline_
+- Unity UI: _com.unity.ugui_
+- Universal RP: _com.unity.render-pipelines.universal_
+- Version Control: _com.unity.collab-proxy_
+- Visual Scripting: _com.unity.visualscripting_
+- Visual Studio Editor: _com.unity.ide.visualstudio_
