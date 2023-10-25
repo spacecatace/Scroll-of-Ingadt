@@ -18,6 +18,7 @@ T채m채 repo itsess채채n ei riit채 suoraksi Unity-projektiksi, joten sen sis채lt�
 ## Projektissa k채ytetyt Unity-paketit
 Silt채 varalta, ett채 paketteja joutuu itse asentamaan ennen projektin tuontia:
 - 2D (package): _com.unity.feature.2d_
+- Cinemachine: _com.unity.cinemachine_
 - Input System: _com.unity.inputsystem_
 - JetBrains Rider Editor: _com.unity.ide.rider_
 - Test Framework: _com.unity.test-framework_
