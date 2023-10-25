@@ -14,3 +14,17 @@ Tämä repo itsessään ei riitä suoraksi Unity-projektiksi, joten sen sisält�
 5. Muutoksia voi sitten helposti seurata ja hakea mm. useimpien IDE:n tai [GitHub Desktopin](https://desktop.github.com/) kautta
 
 **Jos käytät muita IDE:tä kuin Visual Studio Code, käythän lisäämässä siihen generoidut rivit [.gitignore](/.gitignore)-tiedostoon [täältä](https://www.toptal.com/developers/gitignore).**
+
+## Projektissa käytetyt Unityt-paketit
+Siltä varalta, että paketteja joutuu itse asentamaan ennen projektin tuontia:
+- 2D (package): com.unity.feature.2d
+- Input System: com.unity.inputsystem
+- JetBrains Rider Editor: com.unity.ide.rider
+- Test Framework: com.unity.test-framework
+- TextMeshPro: com.unity.textmeshpro
+- Timeline: com.unity.timeline
+- Unity UI: com.unity.ugui
+- Universal RP: com.unity.render-pipelines.universal
+- Version Control: com.unity.collab-proxy
+- Visual Scripting: com.unity.visualscripting
+- Visual Studio Editor: com.unity.ide.visualstudio
