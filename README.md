@@ -11,13 +11,13 @@ Tämä repo itsessään ei riitä suoraksi Unity-projektiksi, joten sen sisält�
    - Avaa projektikansiossa .git (piilotetut kansiot pitää asettaa näkyviksi ylhäältä "Näytä -> Piilotetut kohteet"), avaa tiedosto `config` tekstieditorilla ja lisää loppuun seuraava pätkä:
      ```
      [merge]
-         tool = unityyamlmerge
-         
-         [mergetool "unityyamlmerge"]
-         trustExitCode = false
-         cmd = "'path to UnityYAMLMerge'" merge -p "$BASE" "$REMOTE" "$LOCAL" "$MERGED"
+     tool = unityyamlmerge
+     
+        [mergetool "unityyamlmerge"]
+        trustExitCode = false
+        cmd = "C:/Program Files/Unity/Hub/Editor/2022.3.11f1/Editor/Data/Tools/UnityYAMLMerge.exe" merge -p "$BASE" "$REMOTE" "$LOCAL" "$MERGED"
      ```
-   - **Korvaa `'path to UnityYAMLMerge'` omalla polulla käyttäen '/' eikä '\\'**. Unityn oletuksilla polku on `C:/Program Files/Unity/Hub/Editor/2022.3.11f1/Editor/Data/Tools/UnityYAMLMerge.exe` (voit kokeilla, löytyykö tuo itseltä). Muutoin oma polku löytyy avaamalla Unity Hub -> Installs, näkyvästä listasta 2022.3.11f1 vierestä asetuskuvake ja "Show in explorer", mistä navigoiden vielä `Data/Tools`, josta löytyy `UnityYAMLMerge.exe`.
+   - **Korvaa tarvittaessa polku `cmd = ...` omalla polulla käyttäen '/' eikä '\\'**. Unityn oletuksilla polku on tuo `C:/Program Files/Unity/Hub/Editor/2022.3.11f1/Editor/Data/Tools/UnityYAMLMerge.exe` (voit kokeilla, löytyykö tuo itseltä). Muutoin oma polku löytyy avaamalla Unity Hub -> Installs, näkyvästä listasta 2022.3.11f1 vierestä asetuskuvake ja "Show in explorer", mistä navigoiden vielä `Data/Tools`, josta löytyy `UnityYAMLMerge.exe`.
 5. Tuo GitHub-repon tiedostot omaan projektiisi
    - Yksinkertaisin tapa on ladata repon zip-tiedosto suoraan GitHubista vihreästä _Code_-napista ja korvata oman paikallisen projektin sisältö zipin sisällöllä ylikirjoittaen.
    - Vaihtoehtoisesti voi Gitillä kloonata repon omalle koneelle ensin tyhjään kansioon ja siirtää sieltä paikallisen Unity-projektin päälle, sallien korvaamisen.
