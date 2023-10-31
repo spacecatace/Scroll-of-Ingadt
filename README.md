@@ -26,6 +26,8 @@ Tämä repo itsessään ei riitä suoraksi Unity-projektiksi, joten sen sisält�
    - Kolmas vaihtoehto on määrittää tämä GitHub `origin remote`:ksi paikallisen Unity-projektinsa repoon ja sen kautta [hakea ja tuoda muutokset](https://www.atlassian.com/git/tutorials/syncing).
 6. Muutoksia voi sitten helposti seurata ja hakea mm. useimpien IDE:n tai [GitHub Desktopin](https://desktop.github.com/) kautta
 
+**Brancheja vaihtaessa voi Unityssä joutua avaamaan käyttämänsä scenen uudelleen.** Jos jokin näyttää oudolta/rikkinäiseltä, kokeile `Assets/Scene` kautta avata scene uudestaan.
+
 **Jos käytät muita IDE:tä kuin Visual Studio Code, käythän lisäämässä siihen generoidut rivit [.gitignore](/.gitignore)-tiedostoon [täältä](https://www.toptal.com/developers/gitignore).**
 
 ## Projektissa käytetyt Unity-paketit
