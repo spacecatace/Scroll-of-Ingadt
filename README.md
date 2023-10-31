@@ -24,7 +24,7 @@ Tämä repo itsessään ei riitä suoraksi Unity-projektiksi, joten sen sisält�
    - Yksinkertaisin tapa on ladata repon zip-tiedosto suoraan GitHubista vihreästä _Code_-napista ja korvata oman paikallisen projektin sisältö zipin sisällöllä ylikirjoittaen.
    - Vaihtoehtoisesti voi Gitillä kloonata repon omalle koneelle ensin tyhjään kansioon ja siirtää sieltä paikallisen Unity-projektin päälle, sallien korvaamisen.
    - Kolmas vaihtoehto on määrittää tämä GitHub `origin remote`:ksi paikallisen Unity-projektinsa repoon ja sen kautta [hakea ja tuoda muutokset](https://www.atlassian.com/git/tutorials/syncing).
-6. Muutoksia voi sitten helposti seurata ja hakea mm. useimpien IDE:n tai [GitHub Desktopin](https://desktop.github.com/) kautta
+6. Muutoksia voi sitten helposti seurata ja hakea mm. useimpien IDE:n tai [GitHub Desktopin](https://desktop.github.com/) kautta. **Varmista aina, että muokkaat oikeaa sceneä, joka todennäköisesti on koko projektin ajan sama [SampleScene](Assets/Scenes/SampleScene.unity).**
 
 **Brancheja vaihtaessa voi Unityssä joutua avaamaan käyttämänsä scenen uudelleen.** Jos jokin näyttää oudolta/rikkinäiseltä, kokeile `Assets/Scene` kautta avata scene uudestaan.
 
