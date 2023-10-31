@@ -44,3 +44,6 @@ Siltä varalta, että paketteja joutuu itse asentamaan ennen projektin tuontia:
 - Version Control: _com.unity.collab-proxy_
 - Visual Scripting: _com.unity.visualscripting_
 - Visual Studio Editor: _com.unity.ide.visualstudio_
+
+## GitHub-reposta:
+Käytössä on sääntö, joka ehkäisee suoraan masteriin pushaamista. Tämä siksi, ettei muiden masteriin tekemä työ katoa Unityn erikoisten mergesekoilujen takia, jos yhdistettävä branch on masteria joltain osin jäljessä (valmisteluissa tehtävä Unity Smart Mergen käyttöönotto toivottavasti ehkäisee tätä). Tee siis muutoksesi aina omalle teemoitetulle branchille. Valmiista muutoksista (branchista) voi sitten luoda pull requestin, jossa pyytää mergeä masteriin. Tämä pull request vaatii yhden hyväksynnän joltain muulta kuin requestin luojalta. Tarkistajan tulee yrittää tulkita muutoksista, ettei mitään muutoksiin liittymätöntä poisteta.
