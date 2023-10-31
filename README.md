@@ -3,7 +3,7 @@ A simple group game project for the Turku University course Introduction to Game
 
 ## Projektin kopioiminen Unityyn _(teoriassa)_
 Tämä repo itsessään ei riitä suoraksi Unity-projektiksi, joten sen sisältö sellaisenaan ei toimi Unityssä suoraan.
-1. Asenna Unity **2022.3.11f1**
+1. Asenna Unity [**2022.3.11f1**](https://unity.com/releases/editor/qa/lts-releases)
 2. Luo uusi tyhjä 2D Core Unity-projekti ja seuraa [näitä nopeita ohjeita](https://docs.unity3d.com/Manual/Quickstart2DSetup.html)
 3. Esivalmistele Git LFS sekä Git ja Unity yhteiskäyttö
    - Seuraa askelia [tässä artikkelissa](https://medium.com/@linojon/git-and-unity-getting-started-ad7c42be8324) otsikkoon _Making your first commit_ asti (sen jälkeen tulee vain Git-ohjeita). **Älä suorita committeja vielä.**
