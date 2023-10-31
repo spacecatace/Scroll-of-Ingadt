@@ -19,6 +19,7 @@ Tämä repo itsessään ei riitä suoraksi Unity-projektiksi, joten sen sisält�
      ```
      **Jos kansiota .git ei löydy edes piilotettujen kansioiden näyttämisen jälkeen, aja Git Bashillä projektikansiossa `git init`.**
    - **Korvaa tarvittaessa polku `cmd = ...` omalla polulla käyttäen '/' eikä '\\'**. Unityn oletuksilla polku on tuo `C:/Program Files/Unity/Hub/Editor/2022.3.11f1/Editor/Data/Tools/UnityYAMLMerge.exe` (voit kokeilla, löytyykö tuo itseltä). Muutoin oma polku löytyy avaamalla Unity Hub -> Installs, näkyvästä listasta 2022.3.11f1 vierestä asetuskuvake ja "Show in explorer", mistä navigoiden vielä `Data/Tools`, josta löytyy `UnityYAMLMerge.exe`.
+   - **Jos käytät GitHub Desktop:a**, niin varmista, että repositoryn asetuksissa käytössä on *paikallinen* git config, ei globaali.
 5. Tuo GitHub-repon tiedostot omaan projektiisi
    - Yksinkertaisin tapa on ladata repon zip-tiedosto suoraan GitHubista vihreästä _Code_-napista ja korvata oman paikallisen projektin sisältö zipin sisällöllä ylikirjoittaen.
    - Vaihtoehtoisesti voi Gitillä kloonata repon omalle koneelle ensin tyhjään kansioon ja siirtää sieltä paikallisen Unity-projektin päälle, sallien korvaamisen.
