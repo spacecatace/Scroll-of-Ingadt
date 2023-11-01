@@ -11,9 +11,8 @@ Tämä repo itsessään ei riitä suoraksi Unity-projektiksi, joten sen sisält�
    - Avaa projektikansiossa .git (piilotetut kansiot pitää asettaa näkyviksi ylhäältä "Näytä -> Piilotetut kohteet"), avaa tiedosto `config` tekstieditorilla ja lisää loppuun seuraava pätkä:
      ```
      [merge]
-     tool = unityyamlmerge
-     
-        [mergetool "unityyamlmerge"]
+        tool = unityyamlmerge
+     [mergetool "unityyamlmerge"]
         trustExitCode = false
         cmd = "C:/Program Files/Unity/Hub/Editor/2022.3.11f1/Editor/Data/Tools/UnityYAMLMerge.exe" merge -p "$BASE" "$REMOTE" "$LOCAL" "$MERGED"
      ```
