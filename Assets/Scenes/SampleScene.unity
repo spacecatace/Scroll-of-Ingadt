@@ -217,6 +217,7 @@ GameObject:
   - component: {fileID: 326530108}
   - component: {fileID: 326530110}
   - component: {fileID: 326530111}
+  - component: {fileID: 326530114}
   - component: {fileID: 326530113}
   - component: {fileID: 326530112}
   m_Layer: 0
@@ -408,6 +409,20 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &326530114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 326530106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f189244d91bb8774bbb8b59615af0a42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 0
+  maxHealth: 20
 --- !u!1 &505178155
 GameObject:
   m_ObjectHideFlags: 0
@@ -8406,7 +8421,6 @@ GameObject:
   - component: {fileID: 1938904532}
   - component: {fileID: 1938904531}
   - component: {fileID: 1938904530}
-  - component: {fileID: 1938904529}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -8414,21 +8428,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1938904529
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1938904528}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d624ff2b330a95409c5c088b4a9476c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerHealth: {fileID: 0}
-  attackInterval: 1
-  damageAmount: 0
 --- !u!70 &1938904530
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -8476,7 +8475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d624ff2b330a95409c5c088b4a9476c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: {fileID: 0}
+  playerHealth: {fileID: 326530114}
   attackInterval: 1
   damageAmount: 1
 --- !u!114 &1938904532
@@ -8491,7 +8490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3e602e92e73b4249909d090a7b71102, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 326530106}
   speed: 1
   minDistanceBetween: 1.5
   maxDistanceBetween: 8
@@ -8830,9 +8829,9 @@ Tilemap:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 326530107}
   - {fileID: 664367283}
-  - {fileID: 1049263082}
   - {fileID: 1281557504}
   - {fileID: 147454231}
+  - {fileID: 1049263082}
+  - {fileID: 326530107}
   - {fileID: 1938904534}
