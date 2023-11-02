@@ -10,22 +10,12 @@ public class AIDamageTarget : MonoBehaviour
     //Damage amount
     public int damageAmount;
 
-    float _lastAttackTime;
+    private float lastAttackTime;
 
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     private void OnCollisionStay2D(Collision2D collision)
     {
         //If time since last attack < attackSpeed, then don't attack
-        if(Time.time - _lastAttackTime < attackInterval) return;
+        if(Time.time - lastAttackTime < attackInterval) return;
 
         if(collision.gameObject.CompareTag("Player"))
         {
@@ -33,7 +23,7 @@ public class AIDamageTarget : MonoBehaviour
             playerHealth.TakeDamage(damageAmount);
 
             //Mark this point as last time attacked
-            _lastAttackTime = Time.time;
+            lastAttackTime = Time.time;
         }
     }
 }

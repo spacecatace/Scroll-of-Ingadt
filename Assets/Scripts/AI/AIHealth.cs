@@ -13,12 +13,6 @@ public class AIHealth : MonoBehaviour
         Health = maxHealth;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void TakeDamage(int damage)
     {
         Health -= damage;
