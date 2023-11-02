@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.UIElements.Experimental;
 
 // Implementations for player input
 public class PlayerInputHandler : MonoBehaviour
@@ -33,13 +32,11 @@ public class PlayerInputHandler : MonoBehaviour
         rb.velocity = moveVector * moveSpeed;
     }
 
-    private void OnMove(InputAction.CallbackContext context)
-    {
+    private void OnMove(InputAction.CallbackContext context) {
         moveVector = context.ReadValue<Vector2>();
     }
 
-    private void OnMoveCanceled(InputAction.CallbackContext context)
-    {
+    private void OnMoveCanceled(InputAction.CallbackContext context) {
         moveVector = Vector2.zero;
     }
 }
