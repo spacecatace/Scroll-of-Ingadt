@@ -22,11 +22,9 @@ public class AIChase : MonoBehaviour
 
     void FixedUpdate() {
         distance = Vector2.Distance(transform.position, target.transform.position);
-        // Vector2 direction = target.transform.position - transform.position;
         if(distance > minDistanceBetween && distance < maxDistanceBetween)
         {
             moveVector = (target.transform.position - transform.position).normalized;
-            // transform.position = Vector2.MoveTowards(this.transform.position, target.transform.position, speed * Time.deltaTime);
         }
         else
         {

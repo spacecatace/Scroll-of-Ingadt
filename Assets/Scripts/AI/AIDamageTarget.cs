@@ -5,24 +5,24 @@ using UnityEngine;
 public class AIDamageTarget : MonoBehaviour
 {
     public PlayerHealth playerHealth;
-    //How often can attack
+    // How often can attack
     public float attackInterval = 1;
-    //Damage amount
+    // Damage amount
     public int damageAmount;
 
     private float lastAttackTime;
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        //If time since last attack < attackSpeed, then don't attack
+        // If time since last attack < attackSpeed, then don't attack
         if(Time.time - lastAttackTime < attackInterval) return;
 
         if(collision.gameObject.CompareTag("Player"))
         {
-            //Damage player
+            // Damage player
             playerHealth.TakeDamage(damageAmount);
 
-            //Mark this point as last time attacked
+            // Mark this point as last time attacked
             lastAttackTime = Time.time;
         }
     }
