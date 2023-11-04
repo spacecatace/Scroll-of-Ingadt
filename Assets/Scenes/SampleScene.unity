@@ -215,11 +215,12 @@ GameObject:
   m_Component:
   - component: {fileID: 326530107}
   - component: {fileID: 326530108}
+  - component: {fileID: 326530113}
+  - component: {fileID: 326530112}
   - component: {fileID: 326530110}
   - component: {fileID: 326530111}
   - component: {fileID: 326530114}
-  - component: {fileID: 326530113}
-  - component: {fileID: 326530112}
+  - component: {fileID: 326530115}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -336,7 +337,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e476bb47d815b3428a56421fe2de5c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
 --- !u!61 &326530112
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -416,13 +416,31 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 326530106}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f189244d91bb8774bbb8b59615af0a42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Health: 0
   maxHealth: 20
+--- !u!114 &326530115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 326530106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf737e058ea99814a8658408f97c21f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 20
+  currentHealth: 0
+  moveSpeed: 10
+  attackSpeed: 1
+  damage: 1
+  defense: 0
 --- !u!1 &505178155
 GameObject:
   m_ObjectHideFlags: 0
@@ -8418,10 +8436,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1938904534}
   - component: {fileID: 1938904533}
-  - component: {fileID: 1938904532}
-  - component: {fileID: 1938904531}
   - component: {fileID: 1938904535}
   - component: {fileID: 1938904530}
+  - component: {fileID: 1938904532}
+  - component: {fileID: 1938904531}
+  - component: {fileID: 1938904536}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -8476,9 +8495,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d624ff2b330a95409c5c088b4a9476c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: {fileID: 326530114}
+  playerStats: {fileID: 326530115}
   attackInterval: 1
-  damageAmount: 1
 --- !u!114 &1938904532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8492,7 +8510,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 326530106}
-  speed: 5
   minDistanceBetween: 1.5
   maxDistanceBetween: 8
 --- !u!212 &1938904533
@@ -8589,6 +8606,24 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &1938904536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938904528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01238eb8d866b564c83dd284a9da2e75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 10
+  currentHealth: 0
+  moveSpeed: 5
+  attackSpeed: 1
+  damage: 1
+  defense: 0
 --- !u!1 &1974933034
 GameObject:
   m_ObjectHideFlags: 0

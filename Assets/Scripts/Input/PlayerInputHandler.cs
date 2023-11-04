@@ -12,13 +12,14 @@ public class PlayerInputHandler : MonoBehaviour
     private Vector2 moveVector = Vector2.zero;
     // Reference to the Rigidbody2D component, movement is physics-based
     private Rigidbody2D rb = null;
-
     // This is the speed of the player
-    public float moveSpeed = 10f;
+    private float moveSpeed;
 
     private void Awake() {
         input = new PlayerActions();
         rb = GetComponent<Rigidbody2D>();
+        // Unity is able to find the PlayerStats component due to inheritance
+        moveSpeed = GetComponent<Stats>().moveSpeed;
     }
 
     private void OnEnable() {
